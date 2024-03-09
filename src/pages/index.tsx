@@ -37,9 +37,9 @@ const Home: NextPage = () => {
     <>
       <Loading />
       <div className={`absolute w-full h-screen bg-white-90 z-[9999999] transition-all ${aboutModalState ? 'top-[0]' : 'top-[5000px]'}`}>
-        <a onClick={handleAboutModalClose} className="w-full h-screen bg-black-90 cursor-pointer flex justify-center items-center">
-          <div className="block w-full h-screen items-center ">
-            <p className="w-full h-[10%] text-[#856BC2] text-center about-title">ABOUT US</p>
+        <a onClick={handleAboutModalClose} className="flex items-center justify-center w-full h-screen cursor-pointer bg-black-90">
+          <div className="items-center block w-full h-screen ">
+            <p className="w-full h-[10%] text-[#856BC2] text-center about-title">-  ABOUT US  -</p>
             <div className="flex h-[90%] items-center">
               <div>
                 <p className="about-p">
@@ -66,37 +66,37 @@ const Home: NextPage = () => {
           </div>
 
 
-          <div className="absolute left-0 bottom-0 w-full h-full">
+          <div className="absolute bottom-0 left-0 w-full h-full">
             <img className="sm:w-[130px] absolute sm:block xl:hidden hidden top-[40%] h-auto" src="img/btn/mint-vector-2.png" alt="" />
           </div>
 
-          <div className="absolute right-0 bottom-0 w-full h-full">
+          <div className="absolute bottom-0 right-0 w-full h-full">
             <img className="w-[70px] sm:opacity-0 opacity-100 absolute top-[40%] h-auto" src="img/btn/mint-vector-3.png" alt="" />
           </div>
 
 
-          <div className="absolute right-0 bottom-0 w-full h-full">
+          <div className="absolute bottom-0 right-0 w-full h-full">
             <img className="xl:w-[120px] lg:w-[120px] xl:block hidden absolute bottom-0 h-[20vh] right-[60px]" src="img/btn/about-vector.png" alt="" />
           </div>
 
-          <div className="absolute right-0 bottom-0 w-full h-full">
+          <div className="absolute bottom-0 right-0 w-full h-full">
             <img className="md:w-[116px] sm:block xl:hidden top-[50%] hidden absolute h-auto right-0" src="img/btn/about-vector-2.png" alt="" />
           </div>
 
-          <div className="absolute right-0 bottom-0 w-full h-full">
+          <div className="absolute bottom-0 right-0 w-full h-full">
             <img className="w-[70px] sm:opacity-0 opacity-100 top-[50%] right-0 absolute h-auto" src="img/btn/about-vector-3.png" alt="" />
           </div>
           {/* <MintBtn /> */}
 
 
-          <div className="relative mr-auto ml-5 flex">
+          <div className="relative flex ml-5 mr-auto">
             <Link href={"/"}>
               <a className="xl:w-[200px] lg:w-[200px] md:w-[150px] sm:w-[150px] w-[100px] h-auto ml-5 flex ease-in-out hover:translate-y-5 hover:scale-110 hover:bg-indigo-500 duration-300 z-40">
                 <img src="img/btn/mint.png" alt="" />
               </a>
             </Link>
           </div>
-          <div className="relative ml-auto mr-5 flex">
+          <div className="relative flex ml-auto mr-5">
             <a className="xl:w-[200px] lg:w-[200px] md:w-[150px] sm:w-[150px] w-[100px] h-auto ml-auto mr-5 flex ease-in-out hover:translate-y-5 hover:scale-110 hover:bg-indigo-500 duration-300 z-40 cursor-pointer" onClick={handleAboutModalOpen}>
               <img src="img/btn/about.png" alt="" />
             </a>
