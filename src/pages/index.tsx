@@ -60,7 +60,7 @@ const Home: NextPage = () => {
       <div className={`relative flex-col w-full h-screen items-center transition-all  duration-700  ${fadeState ? 'flex' : 'hide'}`}>
         <MainBg />
         <Navbar />
-        <div className=" absolute w-full h-[50%] items-center flex">
+        <div className="absolute w-full h-[50%] items-center flex">
           <div className="absolute top-0">
             <img className="xl:w-[250px] lg:w-[250px] xl:block ml-[200px] hidden h-[20vh]" src="img/btn/mint-vector.png" alt="" />
           </div>
@@ -102,7 +102,11 @@ const Home: NextPage = () => {
             </a>
           </div>
         </div>
-
+        <div className="absolute w-full h-[50%] items-center flex top-[50%]">
+            <a className="xl:w-[200px] lg:w-[200px] md:w-[150px] sm:w-[150px] w-[100px] h-auto ml-auto mr-5 flex ease-in-out hover:translate-y-5 hover:scale-110 hover:bg-indigo-500 duration-300 z-40 cursor-pointer " onClick={handleAboutModalOpen}>
+              <img src="img/btn/vault.png" alt="" />
+            </a>
+          </div>
       </div>
     </>
   );
